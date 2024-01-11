@@ -1,0 +1,19 @@
+.nextBtnCont {
+    display: flex;
+    gap: 13px;
+    background-color: #038477;
+    align-items: center;
+    padding: 13px 36px 13px 47px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: 400ms;
+}
+
+.nextBtnCont:hover {
+    background-color: #087166;
+}
+
+.nextBtnCont:active {
+    background-color: rgb(19, 18, 18);
+}

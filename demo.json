@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "experience": true,
+        "company": "Google",
+        "role": "Developer",
+        "description": "demo",
+        "degree": "junior",
+        "date": {
+            "start": "2015-01-01",
+            "end": "2015-01-01"
+        }
+    },
+    {
+        "id": "1",
+        "experience": true,
+        "company": "Google",
+        "role": "Developer",
+        "description": "demo",
+        "degree": "junior",
+        "date": {
+            "start": "2015-01-01",
+            "end": "2015-01-01"
+        }
+    }
+]

@@ -1,0 +1,246 @@
+.form-cont,
+.hiddenForm {
+    margin-top: 100px;
+    width: 500px;
+    height: 610px;
+    border-radius: 12px;
+    box-shadow: 3px 4px 2px 0px #F5F5F5;
+    background-color: #fff;
+    padding: 33px 43px 12px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    transition: 400ms;
+
+
+    .headding-form {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #038477;
+    }
+
+
+
+
+    .form {
+
+        .currentStatus {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .currentLabel {
+                font-size: 14px;
+            }
+
+            .currentInput {
+                margin-top: 3px;
+            }
+        }
+
+        .saveBtn {
+            border: none;
+            background-color: #F2F6F6;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-top: 6px;
+            gap: 10px;
+            border-radius: 25px;
+            padding: 10px 22px;
+            transition: 400ms;
+            color: black;
+        }
+
+
+
+        .saveBtn:hover {
+            background-color: #b7c6c6;
+            cursor: pointer;
+        }
+
+        .saveBtn:active {
+            background-color: black;
+            color: white;
+        }
+
+        .disabled {
+            color: #b7c6c6;
+            cursor: default;
+
+            border: none;
+            background-color: #F2F6F6;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-top: 6px;
+            gap: 10px;
+            border-radius: 25px;
+            padding: 10px 22px;
+            transition: 400ms;
+        }
+
+        .disabled:hover {
+            background-color: #F2F6F6;
+            cursor: default;
+        }
+
+        .contCalendars {
+            display: flex;
+            gap: 10px;
+            margin-top: 28px;
+
+            .contCalendar {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                position: relative;
+
+
+                .calendarIcon {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    cursor: pointer;
+                }
+
+                .calendar {
+                    padding: 10px 30px 10px;
+                    background-color: #F2F6F6;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    border: none;
+                    border-radius: 25px;
+                    width: 205px;
+                }
+
+                .calendarHeadding {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-left: 8px;
+                }
+
+            }
+        }
+
+        .checkbox-cont {
+            margin-top: 8px;
+            display: flex;
+            gap: 20px;
+
+
+            .checkbox-label {
+                padding: 10px 12px 9px 65px;
+                border-radius: 25px;
+                background-color: #F2F6F6;
+                display: flex;
+                gap: 34px;
+                font-size: 14px;
+            }
+        }
+
+        .headdings-form {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 26px;
+            padding-left: 8px;
+        }
+
+        .hiddenBlock {
+            display: none;
+        }
+
+        .contSelectors {
+            display: flex;
+            margin-top: 20px;
+            gap: 10px;
+
+            .contSelector {
+                h4 {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-left: 8px;
+                }
+
+                .select {
+                    border: none;
+                    background-color: #F2F6F6;
+                    width: 205px;
+                    padding: 10px 30px 10px;
+                    border-radius: 25px;
+
+
+                }
+            }
+
+
+
+        }
+
+        .registerLabelInputGroups {
+            margin-top: 28px;
+
+            .registerErrMsg {
+                color: red;
+                font-size: 14px;
+            }
+
+            .form-label {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 26px;
+                padding-left: 8px;
+            }
+
+            .formInputs {
+                width: 100%;
+                height: 36px;
+                border: none;
+                outline: none;
+                background-color: #F5F5F5;
+                border-radius: 25px;
+                box-shadow: 3px 4px 2px 0px #F5F5F5;
+                padding: 0px 15px;
+                margin-top: 8px;
+            }
+        }
+    }
+
+
+
+
+}
+
+.hiddenForm {
+    margin-top: 100px;
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    border-radius: 12px;
+    box-shadow: 3px 4px 2px 0px #F5F5F5;
+    background-color: #fff;
+    padding: 0px 43px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnsCont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

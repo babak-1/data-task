@@ -1,0 +1,52 @@
+.svg-cont {
+    width: 40%;
+
+    .human-icon {
+        position: absolute;
+        bottom: 200px;
+        left: 250px;
+    }
+
+    .main-svg {
+        .line {
+            position: absolute;
+            width: 314px;
+            height: 3px;
+            transform: rotate(90deg);
+            background-color: #fff;
+        }
+
+        .first {
+            top: 150px;
+            left: -145px;
+        }
+
+        .second {
+            top: 200px;
+            left: -180px;
+            width: 407px;
+            height: 2px;
+        }
+
+        .headding {
+            position: absolute;
+            top: 60px;
+            left: 44px;
+
+            .text-cont {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .text {
+                    color: #fff;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 234px;
+                }
+            }
+        }
+    }
+}

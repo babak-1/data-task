@@ -1,0 +1,22 @@
+.backBtnCont {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background-color: #FBFBFB;
+    border: 1px solid #038477;
+    padding: 13px 74px 13px 36px;
+    border-radius: 25px;
+    color: #038477;
+    cursor: pointer;
+    transition: 400ms;
+    pointer-events: none;
+}
+
+
+.backBtnCont:hover {
+    background-color: #d1dada;
+}
+
+.backBtnCont:active {
+    background-color: black;
+}

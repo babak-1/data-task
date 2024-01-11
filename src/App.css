@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+  background-color: #fbfbfb;
+  height: 120vh;
+  display: flex;
+
+  .altCont {
+    display: flex;
+  }
+}

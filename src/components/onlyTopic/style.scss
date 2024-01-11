@@ -1,0 +1,32 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 100px;
+    align-items: flex-end;
+
+    .item {
+        background-color: #F4F4F4;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 50px;
+        width: 200px;
+        border-radius: 25px 0% 0% 25px;
+        cursor: pointer;
+
+        .hiddenNumber {
+            display: none;
+        }
+    }
+
+    .active-item {
+        width: 250px;
+        display: flex;
+        gap: 45px;
+        background-color: #103557;
+        color: white;
+        padding-left: 20px;
+    }
+}
