@@ -4,8 +4,7 @@ import FormComp from "./components/form";
 import OnlyTopic from "./components/onlyTopic";
 import ResultData from "./components/resultData";
 import StaticBack from "./components/staticBackground";
-import TopicList from "./components/topicList";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

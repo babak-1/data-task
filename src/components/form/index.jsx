@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import "./style.scss";
 import DatePicker from "react-datepicker";
@@ -6,13 +6,12 @@ import "react-datepicker/dist/react-datepicker.css";
 import tick from "../../assets/icons/tick.svg";
 import calendarIcon from "../../assets/icons/calendar.svg";
 import { v4 as uuidv4 } from "uuid";
-import BackBtn from "../backBtn";
-import NextBtn from "../nextBtn";
 import { useDispatch, useSelector } from "react-redux";
 import { add } from "../../store/features/listsSlice";
 import nextBtn from "../../assets/icons/nextArrowIcon.svg";
 import backBtn from "../../assets/icons/backArrowIcon.svg";
 import { Link, useParams } from "react-router-dom";
+import StepStage from "../stepStage";
 
 const FormComp = () => {
   // calendar code
@@ -21,12 +20,8 @@ const FormComp = () => {
   const [checked, setChecked] = useState(false);
   const [formdata, setFormData] = useState(null);
   const data = useSelector((state) => state.lists);
-
   const [nextBtnStyle, setNextBtnStyle] = useState("none");
-
   const { id } = useParams();
-
-  console.log(formdata, "formdata");
   const dispatch = useDispatch();
 
   const descArr = ["Fiziki əmək", "Sənət", "Ali ixtisas", "Sahibkar"];
@@ -93,9 +88,10 @@ const FormComp = () => {
     <div>
       <div
         className={selectedOption === "yes" ? "form-cont" : "hiddenForm"}
-        style={{ height: data.length !== 0 ? "500px" : "610px" }}
+        style={{ height: data.length !== 0 ? "500px" : "630px" }}
       >
         <h2 className="headding-form">İş təcrübəsi</h2>
+        <StepStage width="50%" />
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <h3
             className="headdings-form"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -10,6 +10,7 @@ import "./style.scss";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { edit } from "../../store/features/listsSlice";
+import StepStage from "../stepStage";
 
 const EditData = () => {
   const [checked, setChecked] = useState(false);
@@ -18,7 +19,6 @@ const EditData = () => {
   const { id } = useParams();
   const data = useSelector((state) => state.lists);
   const existingList = data.filter((item) => item.id === id);
-  console.log(existingList, "exist");
   const [startDate, setStartDate] = useState(
     new Date(existingList[0]?.startDate)
   );
@@ -29,7 +29,6 @@ const EditData = () => {
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm({ mode: "onTouched" });
@@ -57,8 +56,6 @@ const EditData = () => {
   useEffect(() => {
     if (checked) {
       return setEndDate(new Date());
-    } else {
-      return setEndDate(null);
     }
   }, [checked]);
 
@@ -70,6 +67,7 @@ const EditData = () => {
     <div>
       <div className="editCont">
         <h2 className="headdingEdit">İş təcrübəsi</h2>
+        <StepStage width={"50%"} />
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className={"registerLabelInputGroups"}>
             <label htmlFor="company" className="form-label">

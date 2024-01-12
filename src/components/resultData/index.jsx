@@ -6,17 +6,22 @@ import { useDispatch, useSelector } from "react-redux";
 import { remove } from "../../store/features/listsSlice";
 import BackBtn from "../backBtn";
 import NextBtn from "../nextBtn";
+import StepStage from "../stepStage";
 const ResultData = () => {
   const data = useSelector((state) => state.lists);
   const dispatch = useDispatch();
   const handleDelete = (id) => {
     dispatch(remove(id));
   };
-  console.log(data, "datam");
   return (
     <div className="resultBigCont">
       <div className="listFormCont">
         <h2 className="headding-form">İş təcrübəsi</h2>
+        {data.length > 0 ? (
+          <StepStage width="100%" />
+        ) : (
+          <StepStage width="0%" />
+        )}
 
         <ul className="listsResult">
           {data.map((item, index) => (
